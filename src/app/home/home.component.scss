@@ -1,0 +1,42 @@
+.homeC{
+  margin-top: 70px;
+  height: fit-content;
+  font-family: 'Poppins';
+  padding: 0 5% 0 5%;
+  .content{
+    color: white;
+    padding:10% 0 0 0;
+    .hi-row{
+      .col{
+        font-size: 28px;
+      }
+    }
+    .intro-row{
+      .col{
+        h1{
+        font-size: 68px;
+        margin-bottom: 20px;
+        }
+        h3{
+          font-size: 21px;
+          color: rgba(255, 255, 255, 0.637);
+          margin-bottom: 14px;
+        }
+      }
+    }
+    .btn-row{
+      .col{
+        .btn{
+          color: orangered;
+          font-size: 20px;
+          padding: 0;
+          margin-top: 14px;
+        }
+        .btn:hover{
+          text-decoration: none;
+          color: rgba(255, 68, 0, 0.753);
+        }
+      }
+    }
+  }
+}

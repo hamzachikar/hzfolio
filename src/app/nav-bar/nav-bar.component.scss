@@ -1,0 +1,36 @@
+.navbar{
+  font-family:'Poppins';
+  background-color: #121212;
+  padding: 0 5% 0 5%;
+  a{
+      color: white;
+      font-weight: 500;
+  }
+  .nav{
+    width: 100%;
+      .nav-link{
+          color:white;
+          cursor: pointer;
+          padding: 8px 16px 8px 0px;
+          margin: 5px;
+      }
+      .nav-link:hover{
+        color: orangered;
+      }
+      .nav-link:active{
+          box-shadow: none;
+          top: 5px;
+      }
+      .active{
+        color: orangered;
+      }
+      .contact{
+        position: absolute;
+        right: 5%;
+        .nav-link{
+          padding:8px
+        }
+      }
+  }
+
+}

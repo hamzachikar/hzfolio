@@ -1,0 +1,25 @@
+.aboutC{
+  margin-top: 70px;
+  height: fit-content;
+  font-family: 'Poppins';
+  padding: 50px 5% 0 5%;
+  color: white;
+  .content{
+    h1{
+      font-size: 40px;
+      margin-bottom: 70px;
+    }
+    p{
+      margin-bottom: 30px;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.651);
+      .btn{
+        color: orangered;
+      }
+      .btn:hover{
+        text-decoration: none;
+        color: rgba(255, 68, 0, 0.753);
+      }
+    }
+  }
+}

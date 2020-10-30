@@ -28,9 +28,16 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/wowjs/css/libs/animate.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js",
+              "node_modules/wowjs/dist/wow.js"
+
+            ]
           },
           "configurations": {
             "production": {
@@ -92,9 +99,16 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/wowjs/css/libs/animate.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js",
+              "node_modules/wowjs/dist/wow.js"
+
+            ]
           }
         },
         "lint": {
@@ -123,6 +137,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "hzfolio"
+    }
+  },
+  "defaultProject": "hzfolio",
+  "cli": {
+    "analytics": false
+  }
 }
