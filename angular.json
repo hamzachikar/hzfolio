@@ -36,7 +36,6 @@
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.js",
               "node_modules/wowjs/dist/wow.js"
-
             ]
           },
           "configurations": {
@@ -107,7 +106,6 @@
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.js",
               "node_modules/wowjs/dist/wow.js"
-
             ]
           }
         },
@@ -134,6 +132,14 @@
             "production": {
               "devServerTarget": "hzfolio:serve:production"
             }
+          }
+        },
+        "deploy": {
+          "builder": "@netlify-builder/deploy:deploy",
+          "options": {
+            "outputPath": "dist/hzfolio",
+            "netlifyToken": "lXZ74buVioDHNLaFimKlrgc3ngDw5oP1r3FCCpUJyPw",
+            "siteId": "6f06dc97-0d70-4863-959b-973bf170a5d3"
           }
         }
       }
