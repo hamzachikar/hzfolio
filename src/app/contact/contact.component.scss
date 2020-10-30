@@ -5,7 +5,7 @@
   padding: 5% 0 0 5%;
   .content{
     color: white;
-    padding: 0;
+    padding-right: 10%;
     h1{
       font-size: 50px;
       padding-left: 0;
@@ -15,6 +15,33 @@
       font-size: 15px;
       span{
         color: orangered;
+      }
+    }
+    form{
+      margin-top: 50px;
+      .form-group{
+        label{
+          font-size: 13px;
+        }
+        input,textarea{
+          background-color:rgba(255, 255, 255, 0.075);
+          border: 0;
+        }
+        input,textarea:focus{
+         box-shadow: none;
+        }
+
+      }
+      .btn{
+        background-color: rgba(255, 255, 255, 0.11);
+        padding: 10px 16px 10px 16px;
+        font-size: 20px;
+        color: rgba(255, 68, 0, 0.767);
+        border-radius: 15px;
+        border: 0;
+      }
+      .btn:focus{
+       box-shadow: none;
       }
     }
   }

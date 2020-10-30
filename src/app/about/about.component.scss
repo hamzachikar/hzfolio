@@ -16,6 +16,9 @@
       .btn{
         color: orangered;
       }
+      .btn:focus{
+        box-shadow: none;
+      }
       .btn:hover{
         text-decoration: none;
         color: rgba(255, 68, 0, 0.753);
