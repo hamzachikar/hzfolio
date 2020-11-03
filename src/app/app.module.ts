@@ -10,6 +10,12 @@ import { WorkComponent } from './work/work.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContactComponent } from './contact/contact.component';
 import { NgwWowModule } from 'ngx-wow';
+import { AngularFireModule } from '@angular/fire';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { environment } from 'src/app/service/firebase';
+import { AngularFirestoreModule } from "@angular/fire/firestore";
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SnackBarComponent } from './contact/snack-bar/snack-bar.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +24,18 @@ import { NgwWowModule } from 'ngx-wow';
     HomeComponent,
     AboutComponent,
     WorkComponent,
-    ContactComponent
+    ContactComponent,
+    SnackBarComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatSnackBarModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFirestoreModule,
     NgwWowModule
   ],
   providers: [],

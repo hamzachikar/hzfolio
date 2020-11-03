@@ -2,20 +2,41 @@
   <div class="col col-lg-7 content">
     <h1 class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">Let's talk</h1>
     <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">Get in touch via the form below, or by emailing <span>chikar.h@outlook.fr</span>. </p>
-    <form>
+    <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
       <div class="form-group wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.75s">
         <label for="exampleFormControlInput1" >Name :</label>
-        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="enter your name">
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          formControlName="name"
+          placeholder="enter your name"
+          [class]="(!contactForm.controls.name.valid && contactForm.controls.name.touched)?'not-valid':''"
+          >
       </div>
       <div class="form-group wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
         <label for="exampleFormControlInput1">Email address :</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="enter your email">
+        <input
+          type="email"
+          class="form-control"
+          id="message"
+          formControlName="email"
+          placeholder="enter your email"
+          [class]="(!contactForm.controls.email.valid && contactForm.controls.email.touched)?'not-valid':''"
+          >
       </div>
       <div class="form-group wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.25s">
         <label for="exampleFormControlTextarea1">Message :</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="enter your message" ></textarea>
+        <textarea
+          class="form-control"
+          id="message"
+          formControlName="message"
+          rows="5"
+          placeholder="enter your message"
+          [class]="(!contactForm.controls.message.valid && contactForm.controls.message.touched)?'not-valid':''"
+          ></textarea>
       </div>
-      <button type="submit" class="btn btn-primary wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.5s">Submit</button>
+      <button type="submit" class="btn btn-primary wow fadeInUp" [disabled]="!contactForm.valid" data-wow-duration="1s" data-wow-delay="1.5s">Submit</button>
     </form>
   </div>
 </div>
